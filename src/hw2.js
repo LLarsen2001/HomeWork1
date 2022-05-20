@@ -3,6 +3,8 @@
 // Mutation: does your function change the things passed to it
 // Adding an item vs replacing in item in array.
 
+const { listenerCount } = require("process")
+
 
 /**
  * adds item to the array passed at given index
@@ -11,9 +13,21 @@
  * @param {number} index: the index to add to array
  * @returns {undefined}
  */
+
+
  const addItemToArray = (arr, item, index)=>{
+   arr.splice(index,0,item);
+ 
+   }
+   
+
+
+   
+
+
    //TODO
-}
+
+
 
 /**
  * adds item to a new array at given index
@@ -23,6 +37,7 @@
  * @returns {array} a new array with item added
  */
 const addItemToANewArray=(arr, item, index)=>{
+   
      //TODO
 }
 

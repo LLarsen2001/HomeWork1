@@ -8,6 +8,8 @@
  * @return  {number} number times 2
  */
  const doubleNum = (num) => {
+   num = num *2
+   return num
    //TODO
   };
   
@@ -18,6 +20,17 @@
    * @return {[number]} a NEW array with numbers doubled
    */
   const doubleArray = (arr) => {
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        newArr.push(arr[i] * 2);
+    }
+    return(newArr) ;
+      
+      
+
+    
+      
+   
      //TODO
   };
   
@@ -30,8 +43,14 @@
    * @param  {number} a integer
    * @return  {boolean} true if number was even false otherwise
    */
-  const isEven = (num) => {
-      //TODO
+  const isEven = (num) => { 
+    
+   
+    for(let i = 0; i < num; i++){
+      
+      return num%2===0 || num===0
+   
+      }
   };
   
   // part 2 use the method from above to double numbers in new array
@@ -41,7 +60,13 @@
    * @return {[number]} a NEW array with numbers doubled
    */
   const filterEvens = (arr) => {
-    //TODO
+    
+     for(let i = 0; i < arr.length; i++){
+      let theEven=arr.filter(x => x % 2 === 0)
+
+      return theEven
+    }
+          //TODO
   };
   
   isEven;
