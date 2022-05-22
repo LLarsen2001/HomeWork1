@@ -3,7 +3,7 @@
 // Mutation: does your function change the things passed to it
 // Adding an item vs replacing in item in array.
 
-const { listenerCount } = require("process")
+//const { listenerCount } = require("process")
 
 
 /**
@@ -16,8 +16,11 @@ const { listenerCount } = require("process")
 
 
  const addItemToArray = (arr, item, index)=>{
+   
    arr.splice(index,0,item);
- 
+    
+   
+
    }
    
 
@@ -37,7 +40,13 @@ const { listenerCount } = require("process")
  * @returns {array} a new array with item added
  */
 const addItemToANewArray=(arr, item, index)=>{
+
    
+
+   
+
+
+   return z
      //TODO
 }
 
